@@ -165,7 +165,7 @@ def is_business_day(date):
     False
     """
     workdays = pd.bdate_range(start=date, end=date)
-    return __| workdays | len | bool |__
+    return bool(len(workdays ))
 
 def previous_day(date):
     return date + timedelta(days=-1)
